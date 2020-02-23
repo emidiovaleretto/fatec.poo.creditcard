@@ -3,7 +3,7 @@ package fatec.poo.creditcard.domain.models;
 import fatec.poo.creditcard.domain.irepos.IUserRepository;
 import fatec.poo.creditcard.domain.models.enums.Action;
 import fatec.poo.creditcard.domain.models.enums.Permition;
-import fatec.poo.creditcard.domain.models.factories.UserVOFactory;
+import fatec.poo.creditcard.domain.models.factories.UserFactory;
 import fatec.poo.creditcard.domain.vo.UserVO;
 import fatec.poo.creditcard.infra.repos.UserRepositoryImpl;
 
@@ -19,12 +19,12 @@ public class User {
 	}
 	
 	public User(String user, String password) {
-		UserVOFactory factory = new UserVOFactory();
+		UserFactory factory = new UserFactory();
 		
 		this.values = factory
 						.setUser(user)
 						.setPassword(password)
-						.build();
+						.buildVO();
 	}
 	
 	public boolean hasPermition(Action action) {

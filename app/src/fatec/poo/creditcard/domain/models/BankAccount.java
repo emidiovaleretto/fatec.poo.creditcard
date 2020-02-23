@@ -17,6 +17,10 @@ public class BankAccount {
 		
 	}
 	
+	public Long getNumber() {
+		return this.number;
+	}
+	
 	public static boolean isValidDigit(Bank bank, String number) {
 		return true; // TODO - validar em banco
 	}

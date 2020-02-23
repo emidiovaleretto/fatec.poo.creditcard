@@ -8,7 +8,7 @@ public interface ICaseController {
 	
 	public void updateCase(CaseVO caseVO);
 	
-	public void deleteCase(CaseVO caseVO);
+	public void deleteCase(Long id);
 	
-	public CaseVO searchCase(String id);
+	public CaseVO searchCase(Long id);
 }

@@ -17,6 +17,10 @@ public class CardNumber {
 			
 		}
 		
+		public Long getNumber() {
+			return this.number;
+		}
+		
 		public static boolean isValidDigit(Bank bank, String number) {
 			// TODO - arquivo de configuração ou validação em banco
 			return true;

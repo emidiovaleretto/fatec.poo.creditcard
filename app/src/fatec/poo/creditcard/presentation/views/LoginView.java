@@ -11,8 +11,5 @@ import fatec.poo.creditcard.presentation.icontrollers.ILoginController;
 public class LoginView extends JFrame {
 	private static final long serialVersionUID = 4954769000016238155L;
 	private static ILoginController controller = new LoginController();
-	
-	public static void main(String[] args) {
-		controller.login("user", "password");
-	}
+
 }

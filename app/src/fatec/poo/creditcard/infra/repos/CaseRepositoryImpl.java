@@ -6,7 +6,7 @@ import fatec.poo.creditcard.domain.vo.CaseVO;
 public class CaseRepositoryImpl implements ICaseRepository {
 
 	@Override
-	public CaseVO search(CaseVO vo) {
+	public CaseVO search(Long code) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -18,7 +18,7 @@ public class CaseRepositoryImpl implements ICaseRepository {
 	}
 
 	@Override
-	public void delete(CaseVO vo) {
+	public void delete(Long code) {
 		// TODO Auto-generated method stub
 		
 	}
