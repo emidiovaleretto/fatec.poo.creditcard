@@ -13,6 +13,6 @@ public class LoginView extends JFrame {
 	private static ILoginController controller = new LoginController();
 	
 	public static void main(String[] args) {
-		controller.login("admin", "123");
+		controller.login("user", "password");
 	}
 }
