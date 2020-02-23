@@ -1,8 +1,9 @@
 package fatec.poo.creditcard.infra.utils;
 
+import javax.swing.JOptionPane;
+
 public class PopUp {
 	public static void pop(String message) {
-		System.out.println(message);
-		// trocar por um pop-up
+		JOptionPane.showMessageDialog(null, message);
 	}
 }

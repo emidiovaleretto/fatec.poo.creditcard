@@ -1,4 +1,4 @@
-package fatec.poo.creditcard.domain.models;
+package fatec.poo.creditcard.domain.models.enums;
 
 public enum Action {
 	CREATE,

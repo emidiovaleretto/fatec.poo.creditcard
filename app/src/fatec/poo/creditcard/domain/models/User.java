@@ -38,6 +38,8 @@ public class User {
 				return this.getPermition().equals(Permition.ADMIN);
 			case DELETE:
 				return this.getPermition().equals(Permition.ADMIN);
+			case LOGIN:
+				return this.getPermition() != null;
 			default:
 				return false;
 		}
